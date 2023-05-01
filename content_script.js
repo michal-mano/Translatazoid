@@ -1,3 +1,4 @@
+var my_key = config.MY_KEY;
 var source_language;
 var dest_language;
 let translation_wrapper = document.createElement("div");
