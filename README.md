@@ -1,0 +1,2 @@
+# Translatazoid
+Translation Extension (Chrome)
