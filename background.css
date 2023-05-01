@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.translation-wrapper {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(-50%) translateY(calc(-100% - 15px));
+}
+
+.translation-box {
+  overflow-y: overlay;
+  width: 200px;
+  min-height: 40px;
+  max-height: 120px;
+  font-size: 80%;
+  background-color: rgb(255 255 210);
+  border: 1px solid rgb(28, 17, 0);
+  border-radius: 3px;
+  position: relative;
+  user-select: none;
+  text-align: center;
+  padding: 6px;
+  -webkit-box-shadow: 0px 0px 9px 4px rgba(56, 56, 56, 0.44);
+  -moz-box-shadow: 0px 0px 9px 4px rgba(56, 56, 56, 0.44);
+  box-shadow: 0px 0px 9px 4px rgba(56, 56, 56, 0.44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-wrapper {
+  top: -1px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bubble-arrow-inner {
+  background: transparent;
+  border-top: 10px solid rgb(255 255 210);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  width: 0;
+}
+.bubble-arrow-outer {
+  border-top: 12px solid rgb(28, 17, 0);
+  background: transparent;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  position: absolute;
+  width: 0;
+}

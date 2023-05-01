@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="heading">Translatazoid</h1>
+        <h3 class="sub-heading">
+          please select the source and destination languages:
+        </h3>
+        <hr />
+        <div id="main-content"></div>
+        <div class="form">
+          <form
+            enctype="application/x-www-form-urlencoded"
+            method="post"
+            name="form"
+          >
+            <div class="fieldset-container">
+              <fieldset id="source-fieldset">
+                <legend>Source</legend>
+                <div class="select-wrapper">
+                  <select class="languages" id="source-language" name="source">
+                    <option selected hidden>---</option>
+                    <option value="en" id="en">English</option>
+                    <option value="he" id="he">Hebrew</option>
+                  </select>
+                </div>
+              </fieldset>
+              <fieldset id="dest-fieldset">
+                <legend>Destination</legend>
+                <div class="select-wrapper">
+                  <select
+                    class="languages"
+                    id="destination-language"
+                    name="dest"
+                  >
+                    <option selected hidden>---</option>
+                    <option value="en" id="en">English</option>
+                    <option value="he" id="he">Hebrew</option>
+                  </select>
+                </div>
+              </fieldset>
+            </div>
+
+            <input
+              type="submit"
+              id="apply-changes"
+              class="bootstrap-btn"
+              value="Save"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
