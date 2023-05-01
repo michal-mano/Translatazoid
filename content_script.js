@@ -55,7 +55,7 @@ document.addEventListener("mouseup", (event) => {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "31a5ac964dmshd278e791bb43188p18fb56jsncd02899bd119",
+            my_key,
           "X-RapidAPI-Host":
             "translated-mymemory---translation-memory.p.rapidapi.com",
         },
